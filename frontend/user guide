@@ -1,0 +1,32 @@
+# Simple guide
+
+The source code named Server is divided into user and admin end, this only contains Php source code interacting with the user interfaces,
+the user interface is also divided into user and admin. 
+That is, the logic is divided in such away that Server is standalone and GUi is also standalone but they both interact asnychronously.
+
+
+
+Step 1:
+The servder code should be unzipped into any local server, be it, appserv, xampp or mamp for mac,
+please note that the unzipped file will contain both admin and user server
+
+Step 2:
+unzip the Gui folder to any folder created in the local disk environment
+
+here, you are required to open with any IDE, VsCode is recommended.
+
+On IDE, open terminal and change the path to the admin and user respectively, you are required to to do NPM INSTALL command on each directory of the Gui (admin and user). this will install the needed dependencies.
+
+
+To run both Gui, you the below command
+
+npm run serve
+
+make sure on the directory of such gui (admin or user folder)
+
+to exist running, ctrl C
+
+create a database name, the name is the same as filename of the db file in this directory
+
+locate the dataBASE FILE, export it to your database (mysql)
+
